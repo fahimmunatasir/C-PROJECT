@@ -239,4 +239,52 @@ void showprbyplc(float km){
     }
     
 
-    printf("\n\n\tPress any key 
+    printf("\n\n\tPress any key to continue...");
+    getch();
+
+}
+
+void main(){
+    float km=5;
+    int cho;
+    strcpy(place[0].name,"smart city");
+    place[0].dist=0;
+    indx++;
+
+    while(1){
+        system("cls");
+        display();
+
+        scanf("%d",&cho);
+        printf("\n");
+
+        if(cho == 1){
+            addplace();
+        }
+        else if(cho == 2){
+            showalph(km);
+        }
+        else if(cho == 3){
+            showbypr(km);
+        }
+        else if(cho == 4){
+            system("cls");
+            printf("\t\t    Change the price for per KM");
+            printf("\n\n\t--------------------------------------------------\n");
+            printf("\n\tThe price for per KM: ");
+            scanf("%f",&km);
+        }
+        else if(cho == 5){
+            changename();
+        }
+        else if(cho == 6){
+            changedist();
+        }
+        else if(cho == 7){
+            showprbyplc(km);
+        }
+        else if(cho == 0){
+            break;
+        }
+    }
+}
