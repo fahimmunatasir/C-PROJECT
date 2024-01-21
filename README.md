@@ -1,2 +1,2 @@
 # C-PROJECT
-Done this project fpr my C program course
+Done this project for my C program course
